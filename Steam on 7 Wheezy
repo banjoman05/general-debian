@@ -1,0 +1,18 @@
+
+
+dpkg --add-architecture i386
+aptitude update
+aptitude install ia32-libs
+
+# AMD
+aptitude install libgl1-fglrx-glx:i386
+
+# nVidia
+aptitude install libgl1-nvidia-glx:i386
+
+# Intel
+aptitude install libgl1-mesa-glx:i386
+
+# Get the (modified?) steam installer.
+
+# start with steam-debian
